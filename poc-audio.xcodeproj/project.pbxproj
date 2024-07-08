@@ -10,12 +10,13 @@
 		E48099732C36EAFF00646135 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48099722C36EAFF00646135 /* AppDelegate.swift */; };
 		E48099752C36EAFF00646135 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48099742C36EAFF00646135 /* SceneDelegate.swift */; };
 		E48099772C36EAFF00646135 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48099762C36EAFF00646135 /* ViewController.swift */; };
-		E480997A2C36EAFF00646135 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E48099782C36EAFF00646135 /* Main.storyboard */; };
 		E480997C2C36EB0300646135 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E480997B2C36EB0300646135 /* Assets.xcassets */; };
 		E480997F2C36EB0300646135 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E480997D2C36EB0300646135 /* LaunchScreen.storyboard */; };
 		E480998A2C36EB0300646135 /* poc_audioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48099892C36EB0300646135 /* poc_audioTests.swift */; };
 		E48099942C36EB0300646135 /* poc_audioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48099932C36EB0300646135 /* poc_audioUITests.swift */; };
 		E48099962C36EB0300646135 /* poc_audioUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48099952C36EB0300646135 /* poc_audioUITestsLaunchTests.swift */; };
+		E48099EB2C3812A600646135 /* AudioCompressor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48099EA2C3812A600646135 /* AudioCompressor.swift */; };
+		E48099ED2C3826BE00646135 /* audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E48099EC2C3826BE00646135 /* audio.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +41,6 @@
 		E48099722C36EAFF00646135 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E48099742C36EAFF00646135 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E48099762C36EAFF00646135 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E48099792C36EAFF00646135 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E480997B2C36EB0300646135 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E480997E2C36EB0300646135 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E48099802C36EB0300646135 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +49,8 @@
 		E480998F2C36EB0300646135 /* poc-audioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "poc-audioUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E48099932C36EB0300646135 /* poc_audioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = poc_audioUITests.swift; sourceTree = "<group>"; };
 		E48099952C36EB0300646135 /* poc_audioUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = poc_audioUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E48099EA2C3812A600646135 /* AudioCompressor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioCompressor.swift; sourceTree = "<group>"; };
+		E48099EC2C3826BE00646135 /* audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = audio.mp3; path = ../../audio.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +101,11 @@
 		E48099712C36EAFF00646135 /* poc-audio */ = {
 			isa = PBXGroup;
 			children = (
+				E48099EC2C3826BE00646135 /* audio.mp3 */,
 				E48099722C36EAFF00646135 /* AppDelegate.swift */,
 				E48099742C36EAFF00646135 /* SceneDelegate.swift */,
 				E48099762C36EAFF00646135 /* ViewController.swift */,
-				E48099782C36EAFF00646135 /* Main.storyboard */,
+				E48099EA2C3812A600646135 /* AudioCompressor.swift */,
 				E480997B2C36EB0300646135 /* Assets.xcassets */,
 				E480997D2C36EB0300646135 /* LaunchScreen.storyboard */,
 				E48099802C36EB0300646135 /* Info.plist */,
@@ -232,8 +235,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E480997F2C36EB0300646135 /* LaunchScreen.storyboard in Resources */,
+				E48099ED2C3826BE00646135 /* audio.mp3 in Resources */,
 				E480997C2C36EB0300646135 /* Assets.xcassets in Resources */,
-				E480997A2C36EAFF00646135 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +264,7 @@
 				E48099772C36EAFF00646135 /* ViewController.swift in Sources */,
 				E48099732C36EAFF00646135 /* AppDelegate.swift in Sources */,
 				E48099752C36EAFF00646135 /* SceneDelegate.swift in Sources */,
+				E48099EB2C3812A600646135 /* AudioCompressor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +301,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E48099782C36EAFF00646135 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E48099792C36EAFF00646135 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E480997D2C36EB0300646135 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -446,7 +442,8 @@
 				INFOPLIST_FILE = "poc-audio/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -473,7 +470,8 @@
 				INFOPLIST_FILE = "poc-audio/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
